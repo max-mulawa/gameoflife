@@ -2,7 +2,7 @@
 {
     public class LifeFactory : ILifeFactory
     {
-        public Life Create()
+        public ILife Create()
         {
              return new Life(50);
         }

@@ -8,8 +8,10 @@ namespace GameOfLife
         {
             var container = new Container();
             container.Register<ILifeBootstraper>(c=>new SimpleLifeBootstraper());
-            container.Register<ILifeReproductor>(c => new LifeReproductor());
+            container.Register<ILifeReproductor>(c => new ParallelLifeReproductor());
+            //container.Register<ILifeReproductor>(c => new LifeReproductor());
             container.Register<IRenderingEngine>(c => new ConsoleRenderingEngine());
+            container.Register<ILifeFactory>(c => new LifeFactory());
             container.Register<IGameOfLife>(c => new GameOfLife
                                                      {
                                                          LifeBootstraper = container.Resolve<ILifeBootstraper>(),

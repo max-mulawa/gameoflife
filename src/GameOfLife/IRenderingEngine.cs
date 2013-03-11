@@ -2,6 +2,6 @@ namespace GameOfLife
 {
     public interface IRenderingEngine
     {
-        void Draw(Life life);
+        void Draw(ILife life);
     }
 }

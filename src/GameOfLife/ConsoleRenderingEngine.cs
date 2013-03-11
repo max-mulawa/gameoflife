@@ -4,7 +4,7 @@ namespace GameOfLife
 {
     public class ConsoleRenderingEngine : IRenderingEngine
     {
-        public void Draw(Life life)
+        public void Draw(ILife life)
         {
             Console.Clear();
 

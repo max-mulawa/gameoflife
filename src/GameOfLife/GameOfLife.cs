@@ -14,13 +14,15 @@ namespace GameOfLife
 
         public void Play()
         {
-            var life = LifeFactory.Create();
+            ILife life = LifeFactory.Create();
             LifeBootstraper.Initialize(life);
             while (!life.IsDead)
             {
                 RenderingEngine.Draw(life);
                 Console.Read();
+                life.BeginCycle();
                 Reproductor.Procreate(life);
+                life.EndCycle();
             }
         }
       }

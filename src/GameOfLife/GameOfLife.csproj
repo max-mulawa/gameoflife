@@ -47,9 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseLifeReproductor.cs" />
     <Compile Include="Cell.cs" />
     <Compile Include="GameOfLife.cs" />
     <Compile Include="IGameOfLife.cs" />
+    <Compile Include="ILife.cs" />
     <Compile Include="ILifeBootstraper.cs" />
     <Compile Include="ILifeFactory.cs" />
     <Compile Include="ILifeReproductor.cs" />
@@ -57,9 +59,11 @@
     <Compile Include="Life.cs" />
     <Compile Include="LifeFactory.cs" />
     <Compile Include="LifeReproductor.cs" />
+    <Compile Include="ParallelLifeReproductor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConsoleRenderingEngine.cs" />
+    <Compile Include="Region.cs" />
     <Compile Include="SimpleLifeBootstraper.cs" />
   </ItemGroup>
   <ItemGroup>
