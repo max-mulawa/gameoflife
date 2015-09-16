@@ -1,4 +1,4 @@
 gameoflife
 ==========
 
-C# console implementation of Game of life
+C# console implementation of Game of life.
